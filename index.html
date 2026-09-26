@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weather Dashboard</title>
+        <link rel="icon" type="image/jpeg" href="favicon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body data-theme="dark">
+                <main class="app">
+                    <header class="topbar">
+                        <div class="brand-mark" aria-hidden="true">✦</div>
+                        <div>
+                            <p class="eyebrow">LIVE CONDITIONS</p>
+                            <h1>Weather Dashboard</h1>
+                        </div>
+                        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="true">
+                            <span class="theme-icon" aria-hidden="true">☼</span>
+                            <span class="theme-label">Light mode</span>
+                        </button>
+                    </header>
+
+                    <section class="search-panel" aria-label="Search for weather">
+                        <div>
+                            <p class="eyebrow">YOUR FORECAST</p>
+                            <h2>What is the sky doing?</h2>
+                        </div>
+                        <form id="search-form" class="search-form">
+                            <label class="sr-only" for="city">Search for a city</label>
+                            <input type="search" id="city" placeholder="Enter a city name" autocomplete="off" required>
+                            <button type="submit"><span>Search</span><span aria-hidden="true">↗</span></button>
+                        </form>
+                    </section>
+
+                    <section id="dashboard" aria-live="polite" aria-atomic="true">
+                        <div class="empty-state">
+                            <span class="weather-symbol" aria-hidden="true">☼</span>
+                            <h2>Find your current conditions</h2>
+                            <p>Search for any city to see live temperature, humidity, wind and more.</p>
+                        </div>
+                    </section>
+        </main>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+   
+    </body>
+</html>
